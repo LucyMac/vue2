@@ -64,8 +64,6 @@
         </div>
       </div>
 
-
-
     </div>
 
     <script>
@@ -102,9 +100,10 @@
       },
       methods: {
         startEffect: function() {
-          // setInterval(function() { //this does not work :(
-            this.attachHighlight = !this.attachHighlight; 
-          // }, 2000); 
+          var vm = this;
+          setInterval(function() { //this does not work :(
+            vm.attachHighlight = !vm.attachHighlight; 
+          }, 2000); 
         },
         startProgress: function () {
           this.progress = this.progress + 25;
