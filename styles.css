@@ -1,0 +1,58 @@
+  * {
+    margin: 5px;
+  }
+
+#effect {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.highlight {
+  background-color: red;
+  width: 200px;
+}
+
+.shrink {
+  background-color: gray;
+  width: 50px;
+}
+
+.tiny {
+  font-size: 8px;
+}
+
+.squashed {
+  letter-spacing: -2px;
+  font-size: 14px;
+}
+
+.yellow {
+  border: 2px solid yellow;
+}
+
+.maroon {
+  border: 2px dotted maroon;
+}
+
+.purple {
+  border: 1px dotted purple;
+}
+
+.blue {
+  border: 3px solid dodgerblue;
+}
+
+.progress-bar-wrapper {
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  width: 599px;
+  height: 30px;
+}
+
+.progress-bar {
+  height: inherit;
+  border-radius: 3px;
+  background-color: mediumseagreen;
+  margin: 0;
+}

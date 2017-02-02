@@ -58,8 +58,8 @@
     <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
       <div>
         <button v-on:click="startProgress">Start Progress</button>
-        <div style="width: 400px; height: 20px;">
-          <div :style="{'background-color': userColour, 'width': progressBar}">       
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar" :style="{'background-color': userColour, 'width': computedProgress}">       
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
         boolToggle: '',
         userColour: '',
         userSize: 0,
-        progressBar: 0
+        progress: 0
       },
       computed: {
         classToggle: function () {
@@ -95,6 +95,9 @@
         },
         computedStyle: function () {
           return this.userSize + 'px';
+        },
+        computedProgress: function () {
+          return this.progress + 'px';
         }
       },
       methods: {
@@ -104,7 +107,7 @@
           // }, 2000); 
         },
         startProgress: function () {
-          this.progressBar + 25 + 'px';
+          this.progress = this.progress + 25;
         }
       }
     });
