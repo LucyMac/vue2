@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Ex 4</title>
+    <title>Binding styles and classes with Vue.js</title>
     <script src="vue.js"></script>
     <link rel="stylesheet" href="styles.css">
     <!-- // <script src="app.js"></script> -->
@@ -10,8 +10,6 @@
   <body>
 
     <div id="exercise">
-
-        <div>{{message}}</div>
 
     <!-- 1) Start the Effect with the Button. The Effect should alternate the "highlight" or "shrink" class on each new setInterval tick (attach respective class to the div with id "effect" below) -->
       <div>
@@ -71,7 +69,6 @@
       new Vue({
       el: '#exercise',
       data: {
-        message: 'just confirming Vue is working',
         attachHighlight: true,
         userClass: '',
         boolToggle: '',
